@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #1a0000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientPackage.SignInController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="443.0" fitWidth="437.0" layoutX="26.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/104458763-hand-drawn-tic-tac-toe-game-vector-illustration-.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="481.0" layoutY="98.0" prefHeight="345.0" prefWidth="292.0" style="-fx-background-color: #B22222;">
+         <children>
+            <Label layoutX="72.0" layoutY="29.0" text="Welcome!">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="LoginMail" layoutX="42.0" layoutY="105.0" promptText="E-Mail">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="Loginbtn" layoutX="96.0" layoutY="214.0" mnemonicParsing="false" onAction="#GoToGameModes" style="-fx-background-color: #FFA500;" text="Sign In">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="GoSignUpbtn" layoutX="29.0" layoutY="287.0" mnemonicParsing="false" onAction="#GoToSignUp" style="-fx-background-color: #00bfff;" text="Don't have account?SignUp!">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="LoginPassword" layoutX="42.0" layoutY="157.0" promptText="Password">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

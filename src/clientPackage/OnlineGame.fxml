@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #1a0000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientPackage.OnlineGameController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="33.0" layoutY="40.0" prefHeight="439.0" prefWidth="506.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button0" mnemonicParsing="false" prefHeight="136.0" prefWidth="162.0" />
+            <Button fx:id="button1" mnemonicParsing="false" prefHeight="136.0" prefWidth="162.0" GridPane.columnIndex="1" />
+            <Button fx:id="button2" mnemonicParsing="false" prefHeight="138.0" prefWidth="161.0" GridPane.columnIndex="2" />
+            <Button fx:id="button3" mnemonicParsing="false" prefHeight="139.0" prefWidth="162.0" GridPane.rowIndex="1" />
+            <Button fx:id="button4" mnemonicParsing="false" prefHeight="138.0" prefWidth="161.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button5" mnemonicParsing="false" prefHeight="136.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button6" mnemonicParsing="false" prefHeight="134.0" prefWidth="162.0" GridPane.rowIndex="2" />
+            <Button fx:id="button7" mnemonicParsing="false" prefHeight="134.0" prefWidth="161.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button8" mnemonicParsing="false" prefHeight="133.0" prefWidth="159.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <AnchorPane layoutX="571.0" layoutY="121.0" prefHeight="329.0" prefWidth="200.0" style="-fx-background-color: #B22222;">
+         <children>
+            <Label fx:id="headerLabel" layoutX="39.0" layoutY="66.0" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FAEBD7;">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="RecordGameBtn" layoutX="28.0" layoutY="165.0" mnemonicParsing="false" style="-fx-background-color: #FFA500;" text="Record Game">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackToModeBtn" layoutX="29.0" layoutY="245.0" mnemonicParsing="false" onAction="#GoToGameModes" prefHeight="42.0" prefWidth="144.0" style="-fx-background-color: #00bfff;" text="Exit Game">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

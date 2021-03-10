@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #1a0000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientPackage.InvitationController">
+   <children>
+      <AnchorPane layoutX="54.0" layoutY="22.0" prefHeight="458.0" prefWidth="689.0" style="-fx-background-color: #B22222;">
+         <children>
+            <TableView fx:id="PlayerList" layoutX="51.0" layoutY="70.0" prefHeight="319.0" prefWidth="587.0">
+              <columns>
+                <TableColumn fx:id="PlayerName" prefWidth="137.0" text="User Name" />
+                <TableColumn fx:id="PlayerEmail" prefWidth="124.0" text="E_Mail" />
+                  <TableColumn fx:id="PlayerScore" prefWidth="89.0" text="Score" />
+                  <TableColumn fx:id="PlayerLevel" prefWidth="117.0" text="Level" />
+                  <TableColumn fx:id="Invite" prefWidth="116.0" text="Invite" />
+              </columns>
+            </TableView>
+            <Button fx:id="GameModes" layoutX="137.0" layoutY="406.0" mnemonicParsing="false" onAction="#GoToGameModes" style="-fx-background-color: #FFA500;" text="Back To Game Mode !">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <ScrollBar layoutX="638.0" layoutY="70.0" orientation="VERTICAL" prefHeight="319.0" prefWidth="18.0" />
+            <Label layoutX="272.0" layoutY="23.0" text="Invite Player">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="RereshListBtn" layoutX="451.0" layoutY="403.0" mnemonicParsing="false" onAction="#RefreshListBtn" style="-fx-background-color: #00bfff;" text="Reresh list">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
